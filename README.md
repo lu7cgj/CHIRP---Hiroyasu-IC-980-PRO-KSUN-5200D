@@ -21,7 +21,9 @@ To make the workflow even easier, I also included an empty Baofeng UV-5R IMG fil
 This IMG acts as a universal template for users who don’t own a UV-5R:
 
 Open CHIRP → Load the UV-5R IMG
+
 Import any CSV from another radio (as long as it was exported from CHIRP)
+
 Export the CSV again under the UV-5R format
 
 CHIRP always exports UV-5R channel tables in a stable, predictable layout, making them fully compatible with this converter. That means you can standardize any radio’s CHIRP CSV into the UV-5R format before converting it to Hiroyasu.
