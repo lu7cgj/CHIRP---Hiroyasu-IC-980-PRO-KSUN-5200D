@@ -15,6 +15,7 @@ This enables you to modify hundreds of channels in seconds that would otherwise 
 You only need Python installed—no dependencies, no external libraries.
 
 3. CHIRP CSV → Hiroyasu CSV Converter (CHIRP → YSF bridge)
+
 This is the most requested feature and the primary reason this project exists. CHIRP does not support Hiroyasu radios, and no native compatibility exists. However, using this script you can take any CSV exported from CHIRP (tested with Baofeng UV-5R, UV-82, and similar models) and automatically convert it into a Hiroyasu-compatible CSV with all fields mapped to the correct YSF structure.
 
 To make the workflow even easier, I also included an empty Baofeng UV-5R IMG file in this repository.
