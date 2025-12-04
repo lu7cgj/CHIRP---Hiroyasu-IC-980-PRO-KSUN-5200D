@@ -23,4 +23,13 @@ However, using this script you can take any CSV exported from CHIRP (tested with
 Once converted, simply feed the file into encoder.py and obtain a fully functional .YSF codeplug ready to upload to the IC-980Pro.
 
 This toolkit makes it possible, for the first time, to use CHIRP → Hiroyasu workflows, batch-edit channels, share presets, and maintain large codeplugs with minimal effort.
-Feedback and contributions are welcome. 73 de LU7CGJ.
+Feedback and contributions are welcome. 
+73 de LU7CGJ.
+
+--------------------------------------------------------
+SEO Keywords (for indexing and search engines)
+
+CHIRP Hiroyasu IC-980Pro
+CHIRP compatibility Hiroyasu
+IC-980Pro CSV YSF converter CHIRP
+Hiroyasu IC-980Pro programming CPS YSF decoder encoder
