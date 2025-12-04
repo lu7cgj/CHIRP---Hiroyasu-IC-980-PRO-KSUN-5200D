@@ -16,9 +16,12 @@ You only need Python installed—no dependencies, no external libraries.
 
 3. CHIRP CSV → Hiroyasu CSV Converter (CHIRP → YSF bridge)
 
-This is the most requested feature and the primary reason this project exists. CHIRP does not support Hiroyasu radios, and no native compatibility exists. However, using this script you can take any CSV exported from CHIRP (tested with Baofeng UV-5R, UV-82, and similar models) and automatically convert it into a Hiroyasu-compatible CSV with all fields mapped to the correct YSF structure.
+This is the most requested feature and the primary reason this project exists. CHIRP does not support Hiroyasu radios, and no native compatibility exists. However, using these scripts you can take any CSV exported from CHIRP and automatically convert it into a Hiroyasu-compatible CSV with all fields correctly mapped to the YSF structure.
 
-To make the workflow even easier, I also included an empty Baofeng UV-5R IMG file in this repository.
+To make the workflow even easier, I include two empty CHIRP image files in this repository:
+
+1. Empty Baofeng UV-5R IMG (standard template)
+
 This IMG acts as a universal template for users who don’t own a UV-5R:
 
 Open CHIRP → Load the UV-5R IMG
@@ -27,11 +30,15 @@ Import any CSV from another radio (as long as it was exported from CHIRP)
 
 Export the CSV again under the UV-5R format
 
-CHIRP always exports UV-5R channel tables in a stable, predictable layout, making them fully compatible with this converter. That means you can standardize any radio’s CHIRP CSV into the UV-5R format before converting it to Hiroyasu.
+CHIRP always exports UV-5R channel tables in a stable, predictable format, which makes them fully compatible with the converter script chirp_to_hiroyasu_csv(uv5r-uv82).py.
+This allows you to standardize any radio’s CHIRP CSV into the UV-5R layout before converting it to Hiroyasu.
 
-Once converted, simply feed the file into encoder.py to generate a fully functional .YSF codeplug ready for upload to the IC-980Pro.
+2. Empty Baofeng UV-17R IMG (supports the 1.25 m band)
 
-This toolkit enables, for the first time, a clean CHIRP → Hiroyasu workflow, allowing batch edits, cross-radio presets, and large codeplug maintenance with minimal effort. Feedback and contributions are welcome.
+For radios that include the 220 MHz / 1.25 m band, I also provide an empty UV-17R IMG.
+This template ensures that CHIRP retains all 1.25 m channels when importing and exporting CSV files—something the UV-5R cannot do due to hardware limitations.
+
+Use this template with the script chirp_to_hiroyasu_csv(uv17r).py, which is specifically designed to interpret the UV-17R channel structure, including correct tone handling, bandwidth, and special cross-mode behavior.
 
 73 de LU7CGJ.
 
