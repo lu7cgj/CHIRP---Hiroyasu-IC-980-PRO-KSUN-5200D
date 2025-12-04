@@ -15,15 +15,21 @@ This enables you to modify hundreds of channels in seconds that would otherwise 
 You only need Python installed—no dependencies, no external libraries.
 
 3. CHIRP CSV → Hiroyasu CSV Converter (CHIRP → YSF bridge)
+This is the most requested feature and the primary reason this project exists. CHIRP does not support Hiroyasu radios, and no native compatibility exists. However, using this script you can take any CSV exported from CHIRP (tested with Baofeng UV-5R, UV-82, and similar models) and automatically convert it into a Hiroyasu-compatible CSV with all fields mapped to the correct YSF structure.
 
-This is the most requested feature and the primary reason this project exists.
-CHIRP does NOT support Hiroyasu radios, and no native compatibility exists.
-However, using this script you can take any CSV exported from CHIRP (tested with Baofeng UV-5R, UV-82, and similar models) and automatically convert it into a Hiroyasu-compatible CSV with all fields mapped to the correct YSF structure.
+To make the workflow even easier, I also included an empty Baofeng UV-5R IMG file in this repository.
+This IMG acts as a universal template for users who don’t own a UV-5R:
 
-Once converted, simply feed the file into encoder.py and obtain a fully functional .YSF codeplug ready to upload to the IC-980Pro.
+Open CHIRP → Load the UV-5R IMG
+Import any CSV from another radio (as long as it was exported from CHIRP)
+Export the CSV again under the UV-5R format
 
-This toolkit makes it possible, for the first time, to use CHIRP → Hiroyasu workflows, batch-edit channels, share presets, and maintain large codeplugs with minimal effort.
-Feedback and contributions are welcome. 
+CHIRP always exports UV-5R channel tables in a stable, predictable layout, making them fully compatible with this converter. That means you can standardize any radio’s CHIRP CSV into the UV-5R format before converting it to Hiroyasu.
+
+Once converted, simply feed the file into encoder.py to generate a fully functional .YSF codeplug ready for upload to the IC-980Pro.
+
+This toolkit enables, for the first time, a clean CHIRP → Hiroyasu workflow, allowing batch edits, cross-radio presets, and large codeplug maintenance with minimal effort. Feedback and contributions are welcome.
+
 73 de LU7CGJ.
 
 --------------------------------------------------------
