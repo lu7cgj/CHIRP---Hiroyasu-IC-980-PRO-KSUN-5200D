@@ -1,3 +1,10 @@
+## ☕ Donate
+
+If you find these tools useful and want to support my work, you can donate here:
+
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate?business=gcamji%40gmail.com&currency_code=USD)
+
+
 # CHIRP---Hiroyasu-IC-980-PRO-KSUN-5200D
 This project provides a complete toolset for working with the Hiroyasu IC-980Pro codeplug format (.YSF). The official CPS software is extremely limited, slow, and difficult to edit, so I developed a set of Python scripts that allow full extraction, editing, cleaning, and re-encoding of all channel data using simple CSV files.
 
