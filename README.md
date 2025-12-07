@@ -144,7 +144,7 @@ https://youtu.be/0VDHweB8ccU
 
 Enjoy the first fully working CHIRP ↔ Hiroyasu workflow available anywhere.
 --------------------------------------------------------
-SEO Keywords (for indexing and search engines)
+
 
 CHIRP Hiroyasu IC-980Pro
 CHIRP compatibility Hiroyasu
