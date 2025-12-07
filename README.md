@@ -13,9 +13,11 @@ CHIRP does not natively support Hiroyasu radios, and the official CPS software i
 This toolkit solves that problem by allowing:
 
 ✔ CHIRP CSV → YSF codeplug
+
 ✔ YSF codeplug → CHIRP-compatible CSV
 
 With these two scripts you can fully edit your radio’s memory using CHIRP or any spreadsheet editor.
+
 
 📦 Included Scripts
 1. ChirpCSV_to_YSF.py
@@ -47,6 +49,7 @@ Output:
 
 CHIRP_CSV_<filename>.csv
 
+
 🧰 Requirements
 
 Python 3.7+
@@ -54,6 +57,7 @@ Python 3.7+
 Works on Windows, Linux, macOS
 
 No external libraries required
+
 
 🚀 How to Use
 A) Convert CHIRP CSV → YSF
@@ -63,6 +67,7 @@ Export your channel list from CHIRP as CSV
 Drag & drop the CSV file onto:
 
 ChirpCSV_to_YSF.py
+
 
 
 The script will automatically:
@@ -79,6 +84,7 @@ YSF_<filename>.ysf
 
 
 Upload this .YSF into your radio using the official Hiroyasu CPS.
+
 
 B) Convert YSF → CHIRP CSV
 
@@ -106,26 +112,10 @@ CHIRP_CSV_<filename>.csv
 
 Open this CSV in CHIRP or Excel, edit freely, and convert back to YSF when ready.
 
-📁 Folder Structure
-/
-├─ ChirpCSV_to_YSF.py
-├─ HiroyasuYSF_to_ChirpCSV.py
-├─ scripts/
-│   ├─ chirpCSV_to_HiroyasuCSV.py
-│   ├─ HiroyasuCSV_to_YSF.py
-│   ├─ YSF_to_HiroyasuCSV.py
-│   └─ HiroyasuCSV_to_ChirpCSV.py
-└─ bases/
-    ├─ base85.ysf
-    ├─ base120.ysf
-    ├─ base240.ysf
-
-
-The toolkit auto-selects the correct base file depending on channel count.
 
 ⚠️ Notes & Recommendations
 
-Always use CHIRP’s UV-5R or similar template before converting (guarantees stable export structure).
+Always use CHIRP’s UV-5R/UV17-R or similar template before converting (guarantees stable export structure).
 
 The scripts fully support:
 
